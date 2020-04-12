@@ -12,14 +12,18 @@
 <body onload="onInit()">
 
     <div class="navbar">
-        <div class="logo">
-            <h1>generator</h1>
+
+        <div class="navbar-container">
+            <div class="logo">
+                <h1>generator</h1>
+            </div>
+            <div class="nav-links">
+                <a href="#">Gallery</a>
+                <a href="#">Memes</a>
+                <a href="#">About</a>
+            </div>
         </div>
-        <div class="nav-links">
-            <a href="#">Gallery</a>
-            <a href="#">Memes</a>
-            <a href="#">About</a>
-        </div>
+
     </div>
 
     <div class="main-container">
@@ -69,7 +73,6 @@
                             </span>
                         </button>
 
-
                         <button onclick="changeLinePosition(-10)">
                             <span style="font-size: 2rem;">
                                 <i class="fas fa-long-arrow-alt-up"></i><i class="fas fa-align-justify"></i>
@@ -77,11 +80,6 @@
                         </button>
 
                     </div>
-
-
-
-
-
 
                     <div class="buttons-control">
 
@@ -98,10 +96,6 @@
                             </span>
                         </button>
 
-
-
-
-
                         <button onclick="onAlignLeft()">
                             <span style="font-size: 2rem;">
                                 <i class="fas fa-align-left"></i>
@@ -113,27 +107,18 @@
                         <button onclick="onAlignRight()"> <span style="font-size: 2rem;">
                                 <i class="fas fa-align-right"></i>
                             </span></button>
-
-
-
-
                     </div>
 
                     <div class="download-btn">
                         <span style="font-size: 2rem;">
 
-                            <a class="download" onclick="onDownload(this)" download=""> <i class="fas fa-download"></i></a>
-    
+                            <a class="download" onclick="onDownload(this)" download=""> <i
+                                    class="fas fa-download"></i></a>
+
                         </span>
-    
                     </div>
-                
                 </div>
-
-
             </div>
-
-
         </div>
     </div>
 

@@ -68,6 +68,10 @@ h1, h2, input, button {
     margin: 0;
     padding: 0;
 }
+h1 { 
+    font-weight: 900;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
 
 h2 {
     text-align: center;
@@ -83,12 +87,28 @@ button {
     display: flex;
     justify-content: space-between;
     background-color: darkgreen;
+    justify-content: center;
+    height: 50px;
+
+}
+
+.navbar-container { 
+    width: 890px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-links {
+    display: flex;
+    
+
 }
 
 .nav-links a {
     text-decoration: none;
     color: darkgrey;
     font-size: 1.75rem;
+    margin-left: 10px;
 }
 
 /* end of navbar */
@@ -239,4 +259,30 @@ div.input-control {
         margin-bottom: 10px;
         padding-bottom: 10px;
     }
+
+
+
+    .navbar-container{
+        width: 600px;
+    }
+    .nav-links a {
+        font-size: 1.3rem;
+        margin-left: 10px;
+    }
+}
+
+
+
+@media (max-width: 720px){
+    .gallery-meme-container {
+        width: 100px;
+        height: 100px;
+      
+        cursor: pointer;
+    }
+
+    .gallery-container { 
+        width: 80vw;
+    }
+
 }
