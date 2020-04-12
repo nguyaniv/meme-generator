@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>meme-generator</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+</head>
+
+<body onload="onInit()">
+
+    <div class="navbar">
+        <div class="logo">
+            <h1>generator</h1>
+        </div>
+        <div class="nav-links">
+            <a href="#">Gallery</a>
+            <a href="#">Memes</a>
+            <a href="#">About</a>
+        </div>
+    </div>
+
+    <div class="main-container">
+        <h2>please pick an image to start</h2>
+
+        <div class="gallery-container">
+            <div class="gallery-meme-container">
+            </div>
+        </div>
+
+        <div class="meme-modal-container hide">
+
+            <div class="canvas-container">
+                <canvas id="meme-generetor" width="500" height="500"></canvas>
+
+                <div class="controls">
+                    <div class="meme-modal-nav">
+                        <p onclick="onShowGallery()">Gallery</p>
+                    </div>
+
+                    <input placeholder="type text here" name="userTextInput" type="text" onkeyup="onDrawText(this)"
+                        onfocus="onDrawText(this)">
+
+                    <div class="line-control">
+
+                        <button onclick="switchLine()">
+                            <span style="font-size: 2rem;">
+
+                                <i class="fas fa-exchange-alt"></i></button>
+                        </span>
+                        <!-- delete line -->
+                        <button onclick="onDeleteLine()">
+                            <span style="font-size: 2rem;">
+                                <i class="fas fa-trash"></i>
+                            </span>
+                        </button>
+                        <!-- end delete line -->
+                        <button onclick="onAddNewLine()">
+                            <span style="font-size: 2rem;">
+                                <i class="far fa-plus-square"></i>
+                            </span>
+                        </button>
+
+                        <button onclick="changeLinePosition(10)">
+                            <span style="font-size: 2rem;">
+                                <i class="fas fa-long-arrow-alt-down"></i><i class="fas fa-align-justify"></i>
+                            </span>
+                        </button>
+
+
+                        <button onclick="changeLinePosition(-10)">
+                            <span style="font-size: 2rem;">
+                                <i class="fas fa-long-arrow-alt-up"></i><i class="fas fa-align-justify"></i>
+                            </span>
+                        </button>
+
+                    </div>
+
+
+
+
+
+
+                    <div class="buttons-control">
+
+                        <button onclick="onFontSizeChange(1)">
+
+                            <span style="font-size: 2rem;">
+                                <i class="fas fa-font"></i>+
+                            </span>
+                        </button>
+
+                        <button onclick="onFontSizeChange(-1)">
+                            <span style="font-size: 2rem;">
+                                <i class="fas fa-font"></i>-
+                            </span>
+                        </button>
+
+
+
+
+
+                        <button onclick="onAlignLeft()">
+                            <span style="font-size: 2rem;">
+                                <i class="fas fa-align-left"></i>
+                            </span>
+                        </button>
+                        <button onclick="onAlignCenter()"> <span style="font-size: 2rem;">
+                                <i class="fas fa-align-center"></i>
+                            </span></button>
+                        <button onclick="onAlignRight()"> <span style="font-size: 2rem;">
+                                <i class="fas fa-align-right"></i>
+                            </span></button>
+
+
+
+
+                    </div>
+
+                    <div class="download-btn">
+                        <span style="font-size: 2rem;">
+
+                            <a class="download" onclick="onDownload(this)" download=""> <i class="fas fa-download"></i></a>
+    
+                        </span>
+    
+                    </div>
+                
+                </div>
+
+
+            </div>
+
+
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
+    <script src="js/generetor-service.js"></script>
+    <script src="js/generetor-controller.js"></script>
+</body>
+
+</html>

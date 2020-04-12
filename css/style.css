@@ -1,0 +1,242 @@
+/* @font-face {
+    font-family: Impact;
+    src: url("fonts/impact.ttf");
+} */
+
+body {
+    margin: 0;
+  background-image: linear-gradient(to right, rgb(167, 197, 34) , rgb(102, 102, 85));
+
+
+}
+
+canvas {
+    min-width: 35vw;
+    display: block;
+}
+
+.canvas-container {
+    display: flex;
+    max-width: 80vw;
+}
+
+.controls {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    box-shadow: inset 0 0 16px 4px rgb(161, 205, 218);
+    border-radius: 5px;
+    width: 30vw;
+    justify-content: flex-start;
+    margin-left: 10px;
+}
+
+.buttons-control {
+    display: flex;
+    box-shadow: inset 2px 0 0px 2px rgb(161, 205, 218);
+    margin-top: 10px;
+    height: 30%;
+    /* padding-bottom: 5vh; */
+    align-items: center;
+    justify-content: center;
+}
+
+.buttons-control button {
+    margin: 0 5px;
+}
+
+.line-control {
+    display: flex;
+    justify-content: center;
+}
+
+.line-control button {
+    margin: 0 5px;
+    margin-top: 10px;
+}
+
+.controls span {
+    margin: 0;
+    padding: 0;
+}
+
+.controls span button {
+    height: 100%;
+}
+
+h1, h2, input, button {
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    text-align: center;
+}
+
+button {
+    cursor: pointer;
+}
+
+/* navbar section */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: darkgreen;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: darkgrey;
+    font-size: 1.75rem;
+}
+
+/* end of navbar */
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 5vh;
+    margin: 0 auto;
+}
+
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 1000px;
+   
+}
+
+.gallery-meme-container {
+    width: 150px;
+    height: 150px;
+    border: 7px solid black;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.gallery-meme {
+    width: 100%;
+}
+
+input { 
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.meme-modal-nav p {
+    font-size: 1rem;
+    font-family: 'Arial Narrow Bold', sans-serif;
+    border: 1px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: rgb(19, 76, 83);
+    margin: 15px 10px;
+    padding: 1rem;
+    color: white;
+    font-weight: 700;
+}
+
+/* meme generetor */
+
+.meme-modal-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#meme-generetor {
+    border: 1px solid black;
+}
+
+.hide {
+    display: none;
+}
+
+/* controls start here */
+
+.controls button {
+    width: 15%;
+    height: fit-content;
+}
+
+.controls input {
+    font-size: 2rem;
+    width: 70%;
+    margin: 0 auto;
+}
+
+
+div.input-control {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.input-control button {
+    font-size: 1rem;
+}
+
+.controls p {
+    font-size: 20px;
+}
+
+.remove-marker {
+    padding-right: 10%;
+    margin-left: 16px;
+}
+
+.download {
+    cursor: pointer;
+    background-color: #f7f7f7;
+    width: 10%;
+    /* height: 100%; */
+    padding: 0 15px;
+    border: 1px solid #a3a3a3;
+}
+
+.download:hover {
+    border: 1px solid black;
+}
+
+.download-btn {
+    display: flex;
+    height: 100%;
+    align-items: flex-end;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 980px) {
+    .controls {
+        margin-top: 10px;
+        margin-left: 0px;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    .gallery-container {
+
+        width: 80vw;
+
+    }
+    .controls button {
+        margin-left: 0px;
+        flex-wrap: wrap;
+        width: unset;
+        margin-top: 10px;
+    }
+    canvas {
+        width: 100%;
+    }
+    .canvas-container {
+        flex-direction: column;
+    }
+    .buttons-control {
+        /* margin-top: 5px; */
+        margin-bottom: 10px;
+        padding-bottom: 10px;
+    }
+}
